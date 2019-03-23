@@ -1,4 +1,4 @@
-body {
+html {
     box-sizing: border-box;
     background-color: #445A66;
 }
@@ -14,20 +14,25 @@ font-family: 'Cantata One', serif;
 h1 {
     display: block;
     text-transform: lowercase;
-    text-align: center;
     font-family: 'Cantata One', serif;
-    font-size: 100px;
+    font-style: normal;
+    font-size: 80px;
     /* font-family: sans-serif; */
     color: #B0813D;
     background-color: #27272C;
 }
 
 .left {
-    text-align: left;
+    padding-left: 5px;
+    /* text-align: left; */
 }
 
 .right {
-    text-align: right;
+    /* text-align: right; */
+}
+
+.first {
+    display: flex;
 }
 
 div {
