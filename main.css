@@ -1,0 +1,64 @@
+body {
+    box-sizing: border-box;
+    background-color: #445A66;
+}
+
+/* google fonts 
+font-family: 'Lora', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Lusitana', serif;
+font-family: 'Cantata One', serif;
+ */
+
+h1 {
+    display: block;
+    text-transform: lowercase;
+    text-align: center;
+    font-family: 'Cantata One', serif;
+    font-size: 100px;
+    /* font-family: sans-serif; */
+    color: #B0813D;
+    background-color: #27272C;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid red; for debugging */
+}
+
+div.center {
+    justify-content: center;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 80px;
+    /* left: 200px; */
+    /* font-family: sans-serif; */
+    color: #B0813D;
+    background-color: #27272C;
+}
+
+p.left {
+}
+
+p.right {
+}
+
+p.center {
+    align-self: center;
+}
+
+
