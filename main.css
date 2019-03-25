@@ -14,6 +14,13 @@ html {
 body {
     padding: 0;
     margin: 0;
+    height: 3000px;
+}
+
+header {
+    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -45,9 +52,15 @@ span {
     font-family: 'Raleway', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 /* smartphone size */
 @media screen and (max-width: 480px){ 
     #first {
+        position: absolute;
+        top: 15vh;
         display: flex;
         flex-direction: column;
     }
@@ -67,7 +80,7 @@ span {
     }
     
     #first > p {
-        font-size: 40px;         
+        font-size: 60px;         
         width: fit-content;   
     }
 }
@@ -81,7 +94,7 @@ span {
     }
 
     #first > p {
-        font-size: 120px;            
+        font-size: 80px;            
     }
 }
 /* for smallest screen/phone sizes */
