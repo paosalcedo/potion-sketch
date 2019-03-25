@@ -63,7 +63,7 @@ span {
     font-family: 'Raleway', sans-serif;
 }
 
-.hidden {
+.hidden > * {
     display: none;
 }
 
@@ -139,7 +139,7 @@ span {
 }
 
 #flex-carousel {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
     bottom: 5%;
     width: 100vw;

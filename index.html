@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My first p5 project. Me = Paolo Salcedo">
     <title>Pao Salcedo | A Potion Portfolio Submission</title>
-    <!-- <style> body {padding: 0; margin: 0;} </style> -->
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/addons/p5.dom.min.js"></script>
-    <script src="libraries/addons/p5.sound.min.js"></script>
-    <!-- <script src="sketch.js"></script> -->
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Crimson+Text|EB+Garamond|Lora|Lusitana" rel="stylesheet">
@@ -19,20 +14,35 @@
         <h1 class="left">pao salcedo</h1>  
     </header> -->
     <main>
-        <div id="flex-first">
+        <div id="flex-first" class="js-page 0"> 
           <p>a</p>
           <p><span>potion</span></p>
           <p class="center">developer intern</p>
           <p class="end">application</p>
           <p>by pao salcedo</p>
         </div>
+        <div id="flex-piece-01" class="js-page 1 hidden">
+          <iframe width="420" height="300" alt="poetry flight video" src="https://youtu.be/Vs10dabVLXw"></iframe>
+        </div>
+        <div id="flex-piece-02" class="js-page 2 hidden">
+            <iframe width="420" height="300" alt="voyeur VR video" src="https://youtu.be/brQBvu2Ft9Q"></iframe>
+        </div>
+        <div id="flex-piece-03" class="js-page 3 hidden">
+            <iframe width="420" height="300" src="https://youtu.be/Q1FLJ5ImZmg"></iframe>
+        </div>
         <div id="flex-carousel">
-          <div class="carousel-button"></div>
-          <div class="carousel-button"></div>
-          <div class="carousel-button"></div>
-          <div class="carousel-button"></div>
-          <div class="carousel-button"></div>
+          <div class="carousel-button 0"></div>
+          <div class="carousel-button 1"></div>
+          <div class="carousel-button 2"></div>
+          <div class="carousel-button 3"></div>
+          <!-- <div class="carousel-button"></div>
+          <div class="carousel-button"></div> -->
         </div>
     </main>
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="libraries/addons/p5.dom.min.js"></script>
+    <script src="libraries/addons/p5.sound.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>
