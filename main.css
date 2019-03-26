@@ -80,15 +80,21 @@ span {
 }
 
 .project-title {
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-family: 'Lora', serif;
-    font-style: normal;
-    font-size: 40px;
+    color: #B0813D;
+    background-color: #27272C;
+}
+
+.project-section-title {
+    text-transform: lowercase;
+    /* text-decoration: underline; */
+    font-family: 'Lora', serif;
     color: #B0813D;
     background-color: #27272C;
     width: fit-content;
-    padding-right: 20%;
 }
+
 
 /* smartphone size */
 @media screen and (max-width: 480px){ 
@@ -110,12 +116,23 @@ span {
         flex-direction: column;
     }
 
-    .portfolio-entry > p {
+    .project-title {
+        font-style: normal;
+        font-size: 40px;
+        width: fit-content;
+        padding-right: 20%;
+    }
+
+    .project-section-title {
+        font-size: 24px;
+    }
+
+    .project-description {
         font-size: 18px;   
         align-self: center;
         width: fit-content; 
         margin-left: 10%;
-        margin-right: 10%;
+        margin-right: auto;
     }
     
     .center {
@@ -149,7 +166,7 @@ span {
 
 }
 
-/* tablet size */
+/* tablet and larger */
 @media screen and (min-width: 480px){ 
     #flex-first {
         /* border: 1px solid red; */
@@ -159,7 +176,7 @@ span {
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        height: 75%;
+        /* height: 75%; */
     }
     
     #flex-first > p {
@@ -171,17 +188,29 @@ span {
         margin-bottom: 0;
     }
 
-    #flex-piece-01 {
+    .portfolio-entry {
         display: flex;
         flex-direction: column;
         margin-bottom: 10%;
     }
 
-    #flex-piece-01 > p {
-        font-size: 32px;   
+    .project-title {
+        font-style: normal;
+        font-size: 40px;
+        width: fit-content;
+        padding-right: 20%;
+    }
+
+    .project-section-title {
+        font-size: 24px;
+    }
+
+    .project-description {
+        font-size: 18px;   
+        align-self: center;
         width: fit-content; 
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10%;
+        margin-right: auto;
     }
 
     .center {
@@ -214,7 +243,7 @@ span {
         margin-left: 5vw;
     }
     
-    .long-form {
+    .project-description {
         align-self: center;
         margin-left: 10%;
         margin-right: 10%;
@@ -223,21 +252,10 @@ span {
 
 /* desktop size */
 @media screen and (min-width: 1024px){ 
-    #flex-first {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     #flex-first > p {
-        font-size: 60px;            
+        font-size: 80px;            
         margin-top: 2%;
         margin-bottom: 0;       
-    }
-
-    iframe {
-        width: 1280px;
-        height: 720px;
     }
 }
 
