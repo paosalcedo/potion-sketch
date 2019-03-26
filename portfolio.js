@@ -1,8 +1,9 @@
 $(function handleCarouselClicks(){
 	$('.carousel-button').on('click', function(event) {
-        // console.log('clicked on a carousel!');
-        // const carouselMain = $('#flex-first');
         const pageCode = $(this).attr('class');
+        $(this).css("background-color", "#dcdcdc");
+        const otherButtons = $('.carousel-button').not($(this));
+        otherButtons.css("background-color", "#129490");
         if(pageCode === 'carousel-button 0'){
             $('#flex-first').removeClass('hidden');
             const otherPages = $('.js-page').not($('#flex-first'));
@@ -22,5 +23,6 @@ $(function handleCarouselClicks(){
         }
     });
 });
+
 
 // $(handleCarouselClicks);
