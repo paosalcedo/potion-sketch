@@ -123,7 +123,7 @@ span {
 
     #flex-first > p {
         font-size: 32px;   
-        width: fit-content;  
+        width: fit-content; 
         /* margin-top: 5%;
         margin-bottom: 0;        */
     }
@@ -272,9 +272,9 @@ span {
 /* desktop size */
 @media screen and (min-width: 1024px){ 
     #flex-first > p {
-        font-size: 80px;            
+        font-size: 60px;            
         margin-top: 2%;
-        margin-bottom: 0;       
+        margin-bottom: 0;
     }
 
     .carousel-button {
