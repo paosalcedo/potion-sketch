@@ -20,6 +20,10 @@ $(function handleCarouselClicks(){
             $('#flex-piece-03').removeClass('hidden');
             const otherPages = $('.js-page').not($('#flex-piece-03'));
             otherPages.addClass('hidden');
+        } else if (pageCode === 'carousel-button 4'){
+            $('#flex-piece-04').removeClass('hidden');
+            const otherPages = $('.js-page').not($('#flex-piece-04'));
+            otherPages.addClass('hidden');
         }
     });
 });

@@ -9,6 +9,7 @@ font-family: 'Cantata One', serif;
 html {
     box-sizing: border-box;
     background-color: #445A66;
+    /* background-image: linear-gradient(#445A66, #2a3d47); */
 }
 
 body {
@@ -30,25 +31,21 @@ header {
     padding: 0;
 }
 
-h1 {
-    display: inline-block;
-    text-transform: lowercase;
-    font-family: 'Cantata One', serif;
-    font-style: normal;
-    font-size: 60px;
-    color: #B0813D;
-    background-color: #27272C;
+#flex-first {
+    margin-top: 2%;
+    padding: 0;
 }
 
-#flex-first {
-    margin-top: 5%;
-    padding: 0;
+#flex-first > * {
+    border-radius: 25px;
+    padding: 10px;
 }
 
 p {    
     font-family: 'Lora', serif;
-    color: #CC9D5B;
-    background-color: #27272C; 
+    color: #f8c175;
+    background-color: #27272C;
+    /* border-radius: 3%; */
 }
 
 a {
@@ -75,20 +72,27 @@ span {
     padding-bottom: 5vh; */
 }
 
+.portfolio-entry > * {
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .project-title {
     text-transform: uppercase;
     font-family: 'Lora', serif;
-    color: #B0813D;
+    color: #f8c175;
     background-color: #27272C;
+    /* border-radius: 5%; */
 }
 
 .project-section-title {
     text-transform: lowercase;
     /* text-decoration: underline; */
     font-family: 'Lora', serif;
-    color: #B0813D;
+    color: #f8c175;
     background-color: #27272C;
     width: fit-content;
+    /* border-radius: 5%; */
 }
 
 #flex-carousel {
@@ -105,10 +109,11 @@ span {
 .carousel-button {
     background-color: #129490;
     box-shadow: 3px 3px #27272C;
+    border-radius: 30%;
 }
 
 /* smartphone size */
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 556px){ 
     #flex-first {
         display: flex;
         flex-direction: column;
@@ -161,7 +166,6 @@ span {
 
     .carousel-button {
         /* border: 1px solid blue; */
-        border-radius: 30%;
         width: 5vw;
         height: 5vw;
     }
@@ -174,7 +178,7 @@ span {
 }
 
 /* tablet and larger */
-@media screen and (min-width: 480px){ 
+@media screen and (min-width: 556px){ 
     #flex-first {
         /* border: 1px solid red; */
         position: absolute;
@@ -241,8 +245,8 @@ span {
 
     iframe {
         margin-top: 5vh;
-        width: 640px;
-        height: 480px;
+        width: 512px;
+        height: 288px;
         align-self: center;
     }
 
@@ -252,9 +256,8 @@ span {
     }
 
     .carousel-button {
-        border-radius: 30%;
-        width: 2vw;
-        height: 2vw;
+        width: 4vw;
+        height: 4vw;
         margin-left: 2vw;
         margin-right: 2vw;
     }
@@ -272,6 +275,13 @@ span {
         font-size: 80px;            
         margin-top: 2%;
         margin-bottom: 0;       
+    }
+
+    .carousel-button {
+        width: 3vw;
+        height: 3vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 }
 
